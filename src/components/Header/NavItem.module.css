@@ -1,0 +1,10 @@
+.navItem {
+    outline: 2px solid orangered;
+    display: flex;
+    width: 25%;
+    max-width: 200px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

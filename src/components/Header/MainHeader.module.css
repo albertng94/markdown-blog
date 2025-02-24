@@ -1,0 +1,39 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    border-bottom: 8px solid black;
+    z-index: 1000;
+}
+
+.logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    min-width: 300px;
+    height: 100%;
+    outline: 2px solid red;
+}
+
+.title {
+    font-size: 21px;
+}
+
+.nav {
+    margin-top: 5vh;
+    width: 100%;
+    outline: purple 4px solid;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    outline: solid 2px green;   
+}
