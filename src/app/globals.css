@@ -40,3 +40,7 @@ a {
     color-scheme: dark;
   }
 }
+
+.pages-wrapper {
+  margin-top: 10vh;
+}

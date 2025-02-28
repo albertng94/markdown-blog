@@ -11,20 +11,20 @@ export default function MainHeader() {
                     <h1 className={classes.title}>Your<br/>Markdown<br/>Blog</h1>
                 </div>
                 
-                    <nav className={classes.nav}>
-                        <ul>
-                            <NavItem>
-                                <Link href="/">All Posts</Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link href="/new-post">Create<br/>New Post</Link>
-                            </NavItem>
-                            <NavItem>
-                                <Link href="/drafts">Your<br/>Drafts</Link>
-                            </NavItem>
-                            <NavItem>Dark<br/>Mode</NavItem>
-                        </ul>
-                    </nav>
+                <nav className={classes.nav}>
+                    <ul>
+                        <NavItem>
+                            <Link href="/">About the<br/>project</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link href="/blog">Blog<br/>Posts</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link href="/drafts">Your<br/>Drafts</Link>
+                        </NavItem>
+                        <NavItem>Dark<br/>Mode</NavItem>
+                    </ul>
+                </nav>
                 
         </header>
     );

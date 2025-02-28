@@ -22,7 +22,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <MainHeader />
-        {children}
+        <div className="pages-wrapper">
+          {children}
+        </div>
         {/* MainFooter component */}
       </body>
     </html>
