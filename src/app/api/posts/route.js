@@ -2,7 +2,10 @@ import { getAllPosts } from "@/lib/posts";
 
 export async function GET() {
   const posts = getAllPosts();
-  return new Response(JSON.stringify(posts), {
+
+  const sortedPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  
+  return new Response(JSON.stringify(sortedPosts), {
     status: 200,
     headers: {
       'Content-Type': 'application/json',
