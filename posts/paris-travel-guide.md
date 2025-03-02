@@ -3,6 +3,8 @@ title: 'A Traveler’s Guide to Paris'
 date: '2025-02-21'
 author: 'Alice'
 description: An easy travel guide to visit the city of love, art, and pastry.
+image: https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=250&h=200
+imageAlt: A beutiful picture of Paris' skyline.
 ---
 
 # A Traveler’s Guide to Paris

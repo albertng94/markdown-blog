@@ -43,4 +43,9 @@ a {
 
 .pages-wrapper {
   margin-top: 10vh;
+  outline: teal solid 4px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
 }

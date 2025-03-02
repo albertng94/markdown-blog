@@ -1,5 +1,6 @@
 "use client";
 
+import PostCard from "@/components/MainBlogPage/PostCard";
 import classes from "./page.module.css";
 import { useEffect, useState } from "react";
 
@@ -33,17 +34,13 @@ export default function BlogPage() {
     }
 
     return (
-        <div>
-            <input type="search" onChange={handleChange} placeholder="Search through our posts..." />
-            <ul>
+        <>
+            <input className={classes.searchBar} type="search" onChange={handleChange} placeholder="Search through our posts..." />
+            <ul className={classes.postsGrid}>
                 {filteredPosts.map(post => (
-                    <li key={post.slug}>
-                        <p>{post.title}</p>
-                        <p>{post.author}</p>
-                        <span>{post.date}</span>
-                    </li>
+                    <PostCard post={post} key={post.slug} />
                 ))}
             </ul>
-        </div>
+        </>
     );
 }
