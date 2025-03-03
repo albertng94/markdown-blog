@@ -4,7 +4,7 @@ date: "2025-01-18"
 image: "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?w=250&h=250"
 imageAlt: "A chef preparing sushi rolls"
 description: "Learn the traditional techniques behind crafting the perfect sushi."
-author: "David Nakamura"
+author: "Sarah Johnson"
 ---
 
 Sushi is not just a dish; it's a form of art. Originating in Japan, sushi has become a global phenomenon, offering a delicate balance of flavors, textures, and visual presentation.
