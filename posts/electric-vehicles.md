@@ -1,10 +1,11 @@
 ---
 title: "The Rise of Electric Vehicles"
-date: "2025-02-15"
+date: "2023-02-15"
 image: "https://plus.unsplash.com/premium_photo-1661963979733-4f39ac603294?w=250&h=250"
 imageAlt: "A modern electric car charging"
 description: "EVs are transforming the automotive industry with cleaner energy and efficient performance."
 author: "Michael Green"
+category: Lifestyle
 ---
 
 Electric vehicles (EVs) are rapidly changing the face of the automotive industry. With the growing demand for sustainable solutions, EVs offer an eco-friendly alternative to traditional gasoline-powered cars.

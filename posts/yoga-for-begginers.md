@@ -5,6 +5,7 @@ image: "https://plus.unsplash.com/premium_photo-1683133269843-09a177048cef?w=250
 imageAlt: "A person performing yoga poses on a mat"
 description: "Start your yoga journey with these 4 easy and effective yoga poses."
 author: "Emily White"
+category: Lifestyle
 ---
 
 Yoga is a wonderful practice that combines physical movement with mental clarity. If you're a beginner, starting with basic poses can help you ease into the practice while reaping the benefits of increased flexibility, strength, and focus.

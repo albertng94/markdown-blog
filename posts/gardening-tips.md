@@ -1,10 +1,11 @@
 ---
 title: '5 Easy Gardening Tips for Beginners'
-date: '2025-02-23'
+date: '2024-06-23'
 author: 'Anna Roberts'
 description: Gardening is a relaxing and rewarding hobby! Here are five easy tips to get you started.
 image: https://images.unsplash.com/photo-1438109382753-8368e7e1e7cf?w=250&h=200
 imageAlt: A person holding a plant ready to be planted.
+category: Lifestyle, Nature
 ---
 
 # 5 Easy Gardening Tips for Beginners

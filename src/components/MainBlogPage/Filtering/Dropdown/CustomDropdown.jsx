@@ -3,10 +3,8 @@ import classes from './CustomDropdown.module.css';
 import Image from "next/image";
 import dropdownBlackIcon from "../../../../../public/icons/dropdown-black.svg";
 
-export default function CustomDropdown({ options, defaultOption, handleClick, isOpen }) {
+export default function CustomDropdown({ options, defaultOption, handleClick, isOpen, handleFiltering }) {
     const [selectedOption, setSelectedOption] = useState(defaultOption);
-
-    console.log(options);
 
     return (
         <div className={classes.dropdown} onClick={handleClick}>
@@ -32,6 +30,7 @@ export default function CustomDropdown({ options, defaultOption, handleClick, is
                                 key={index}
                                 onClick={() => {
                                     setSelectedOption(option);
+                                    handleFiltering(option);
                                     handleClick();
                                 }}
                                 className={classes.option}

@@ -1,10 +1,11 @@
 ---
 title: 'The Perfect Fluffy Pancake Recipe'
-date: '2025-02-22'
+date: '2024-12-22'
 author: 'Michael Green'
 description: Everyone loves pancakes! Here's a foolproof recipe for light, fluffy pancakes to start your day off right.
 image: https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=250&h=200
 imageAlt: A delicious pancakes breakfast.
+category: Food
 ---
 
 # The Perfect Fluffy Pancake Recipe

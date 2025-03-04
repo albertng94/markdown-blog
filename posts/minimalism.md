@@ -5,6 +5,7 @@ image: "https://images.unsplash.com/photo-1449247709967-d4461a6a6103?w=250&h=250
 imageAlt: "A minimalist living room with simple decor"
 description: "Discover the benefits of minimalism and how decluttering your space can lead to a more fulfilling life."
 author: "Anna Roberts"
+category: Lifestyle
 ---
 
 Minimalism is about more than just decluttering your home—it's a lifestyle that promotes simplicity, focus, and intentional living. By reducing excess, you make room for the things that truly matter.

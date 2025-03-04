@@ -5,6 +5,7 @@ image: "https://images.unsplash.com/photo-1515179984198-74497483a356?w=250&h=200
 imageAlt: "A stunning view of the Swiss Alps"
 description: "Discover the breathtaking landscapes of the Swiss Alps, where adventure meets serenity."
 author: "Sarah Johnson"
+category: Travel, Nature
 ---
 
 Switzerland is famous for its breathtaking mountains, serene lakes, and charming villages, making the Swiss Alps a prime destination for travelers. Whether you're seeking adventure or just looking to relax, there's something for everyone.
