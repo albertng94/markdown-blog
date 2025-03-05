@@ -10,6 +10,8 @@ import {
     filterPostsByCategory, 
     getCommonFilteredPosts 
 } from "@/lib/filterPosts";
+import Image from "next/image";
+import notFoundIcon from "../../../public/icons/notFound.svg";
 
 // // Define filter options based on date
 const dateFilter = {
@@ -107,7 +109,8 @@ export default function BlogPage() {
         return post.title.toLowerCase().includes(lowerCaseSearchTerm) ||
                post.author.toLowerCase().includes(lowerCaseSearchTerm) ||
                post.description.toLowerCase().includes(lowerCaseSearchTerm) ||
-               post.category.toLowerCase().includes(lowerCaseSearchTerm);
+               post.category.toLowerCase().includes(lowerCaseSearchTerm) ||
+               post.date.toLowerCase().includes(lowerCaseSearchTerm);
     });
 
 
@@ -142,11 +145,26 @@ export default function BlogPage() {
                     placeholder="Search through our posts..." 
                 />
             </div>
-            <ul className={classes.postsGrid}>
-                {filteredPosts.map(post => (
-                    <PostCard post={post} key={post.slug} />
-                ))}
-            </ul>
+            {/* If after filtering logic the array has posts, render them in post cards*/
+                filteredPosts.length > 0 && 
+                    <ul className={classes.postsGrid}>
+                        {filteredPosts.map(post => (
+                            <PostCard post={post} key={post.slug} />
+                        ))}
+                    </ul>
+            }
+            {/* If after filtering logic the array has no posts, render fallback content*/
+                filteredPosts.length === 0 && 
+                    <div className={classes.NoPostsFound}>
+                        <Image 
+                            src={notFoundIcon}
+                            alt="Blog not found icon" 
+                            width={100} 
+                            height={100}
+                        />
+                        <p>No related posts were found...</p>
+                    </div>
+            }
         </>
     );
 }
