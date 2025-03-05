@@ -8,12 +8,14 @@ author: "Anna Roberts"
 category: Lifestyle
 ---
 
-Minimalism is about more than just decluttering your home—it's a lifestyle that promotes simplicity, focus, and intentional living. By reducing excess, you make room for the things that truly matter.
+# Minimalism: Living with Less
+
+Minimalism is about more than just decluttering your home. It's a lifestyle that promotes simplicity, focus, and intentional living. By reducing excess, you make room for the things that truly matter.
 
 ### The Benefits of Minimalism
 Minimalism allows you to live with less but gain so much more. It reduces stress, saves money, and creates a cleaner, more organized space. With fewer distractions, you can focus on the activities, people, and goals that bring value to your life.
 
-![Minimalist Home](https://example.com/minimalist-home.jpg)
+![Minimalist Home](https://images.unsplash.com/photo-1605774337664-7a846e9cdf17?w=800)
 
 ### Steps to Start Living Minimally
 1. **Declutter Your Space**: Begin by getting rid of items that no longer serve a purpose. Donate, recycle, or sell things you don't use.

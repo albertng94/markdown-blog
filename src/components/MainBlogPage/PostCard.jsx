@@ -3,12 +3,9 @@ import classes from "./PostCard.module.css";
 import Image from "next/image";
 
 export default function PostCard({ post }) {
-
-    const slug = post.title.split(" ").join("-").toLowerCase();
-
     return (
-        <Link href={`/blog/${slug}`}>
-            <li className={classes.postItem} key={slug}>
+        <Link href={`/blog/${post.slug}`}>
+            <li className={classes.postItem} key={post.slug}>
                 <p className={classes.postTitle}>{post.title}</p>
                 <Image 
                     className={classes.postImage} 

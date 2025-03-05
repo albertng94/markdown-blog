@@ -10,8 +10,6 @@ category: Travel
 
 # A Traveler’s Guide to Paris
 
-![Paris Skyline](https://images.unsplash.com/photo-1493815793589-3465bb9936b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxOTk3NjV8MHwxfGFsbHwxfHx8fHx8fHwxNjIxOTk4MjU4&ixlib=rb-1.2.1&q=80&w=4000)
-
 ## Why Visit Paris?
 
 Paris, the city of lights, is known for its rich history, stunning architecture, and of course, delicious cuisine. If you're planning a trip, here are some must-see spots:
@@ -20,6 +18,8 @@ Paris, the city of lights, is known for its rich history, stunning architecture,
 - **Eiffel Tower**: Iconic and beautiful, especially at night when it's lit up!
 - **Louvre Museum**: Home to the famous Mona Lisa.
 - **Notre-Dame Cathedral**: Stunning Gothic architecture, though still under reconstruction after the fire.
+
+![Paris Skyline](https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800)
 
 ## Getting Around Paris
 
@@ -36,7 +36,9 @@ Here's an example of a simple itinerary for a 3-day stay:
 
 ```text
 Day 1: Visit the Eiffel Tower and walk around the Seine River.
+
 Day 2: Explore the Louvre Museum and Tuileries Garden.
+
 Day 3: Enjoy Montmartre and Sacré-Cœur Basilica.
 ```
 

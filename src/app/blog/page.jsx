@@ -113,7 +113,6 @@ export default function BlogPage() {
                post.date.toLowerCase().includes(lowerCaseSearchTerm);
     });
 
-
     return (
         <>
             <div className={classes.filters}>

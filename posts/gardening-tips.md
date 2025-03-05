@@ -10,7 +10,7 @@ category: Lifestyle, Nature
 
 # 5 Easy Gardening Tips for Beginners
 
-![Gardening](https://images.unsplash.com/photo-1602535979081-54d1b27069f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxOTk3NjV8MHwxfGFsbHwxfHx8fHx8fHwxNjIxOTk4NTM0&ixlib=rb-1.2.1&q=80&w=4000)
+![Gardening](https://images.unsplash.com/photo-1438109382753-8368e7e1e7cf?w=800)
 
 Gardening is a relaxing and rewarding hobby! Here are five easy tips to get you started:
 

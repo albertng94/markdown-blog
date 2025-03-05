@@ -10,9 +10,10 @@ category: Food
 
 # The Perfect Fluffy Pancake Recipe
 
-![Pancakes](https://images.unsplash.com/photo-1559526324-d3d4f7e7f234?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxOTk3NjV8MHwxfGFsbHwxfHx8fHx8fHwxNjM5OTM1Mjkz&ixlib=rb-1.2.1&q=80&w=4000)
-
 Everyone loves pancakes! Here's a foolproof recipe for light, fluffy pancakes to start your day off right.
+
+![Pancakes](https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=800)
+
 
 ## Ingredients:
 - 1 ½ cups all-purpose flour
@@ -31,7 +32,7 @@ Everyone loves pancakes! Here's a foolproof recipe for light, fluffy pancakes to
 6. Cook each side until golden brown. Serve hot with syrup, berries, or whipped cream!
 
 ```text
-Tip: For extra fluffy pancakes, let the batter rest for 5 minutes before cooking.
-
-> _"There’s nothing better than a stack of pancakes on a lazy Sunday morning." – Unknown
+Tip: For extra fluffy pancakes, let the butter rest for 5 minutes before cooking.
+```
+> _"There’s nothing better than a stack of pancakes on a lazy Sunday morning."_ – Unknown
 
