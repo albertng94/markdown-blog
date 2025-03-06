@@ -6,7 +6,7 @@ export default function PostCard({ post }) {
     return (
         <Link href={`/blog/${post.slug}`}>
             <li className={classes.postItem} key={post.slug}>
-                <p className={classes.postTitle}>{post.title}</p>
+                <h3 className={classes.postTitle}>{post.title}</h3>
                 <Image 
                     className={classes.postImage} 
                     src={post.image} 

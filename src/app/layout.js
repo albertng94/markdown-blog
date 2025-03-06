@@ -1,16 +1,21 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lato, Montserrat } from "next/font/google";
 import "./globals.css";
 import MainHeader from "@/components/Header/MainHeader";
+import Footer from "@/components/Footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700"]
+});
+
+const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const permanentMarker = Permanent_Marker({
+//   subsets: ["latin"],
+//   weight: ["400"]
+// });
 
 export const metadata = {
   title: "Your Markdown Blog",
@@ -20,12 +25,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body 
+        className={`
+          ${lato} 
+          ${montserrat} 
+        `}
+      >
         <MainHeader />
         <div className="pages-wrapper">
           {children}
         </div>
-        {/* MainFooter component */}
+        <Footer />
       </body>
     </html>
   );
