@@ -1,8 +1,8 @@
 .footer {
+    outline: solid blue 2px;
+    grid-row: 3 / 4;
+    position: relative;
     background-color: rgb(39, 36, 36);
-    height: 60px;
-    position: sticky;
-    bottom: 0;
     width: 100%;
     color: whitesmoke;
     display: flex;

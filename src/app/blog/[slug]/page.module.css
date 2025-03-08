@@ -1,15 +1,16 @@
 .blogContainer {
-    flex: 1;
-    margin-top: 7vh;
-    margin-bottom: 7vh;
-    margin-right: clamp(50px, 10vw, 600px);
-    margin-left: clamp(50px, 10vw, 600px);
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    /*margin-right: clamp(50px, 10vw, 600px);
+    margin-left: clamp(50px, 10vw, 600px);*/
+    margin-inline: auto;
     display: flex;
     justify-content: center;
 }
 
 .postContent {
-    max-width: 800px;
+    max-width: 600px;
+    width: clamp(300px, 60vw, 800px);
     white-space: pre-line;
     margin-bottom: 40px;
 }
@@ -25,8 +26,8 @@
 }
 
 .postContent img {
-    text-align: center;
     width: clamp(300px, 60vw, 800px);
+    max-width: 600px;
 }
 
 .postMetadata {

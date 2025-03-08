@@ -32,9 +32,9 @@ export default function RootLayout({ children }) {
         `}
       >
         <MainHeader />
-        <div className="pages-wrapper">
+        <main className="pages-wrapper">
           {children}
-        </div>
+        </main>
         <Footer />
       </body>
     </html>

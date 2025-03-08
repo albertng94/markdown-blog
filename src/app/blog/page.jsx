@@ -115,7 +115,7 @@ export default function BlogPage() {
 
     return (
         <>
-            <div className={classes.filters}>
+            <section className={classes.filters}>
                 <CustomDropdown
                     options={dateFilter.options}
                     defaultOption={dateFilter.defaultOption} 
@@ -143,27 +143,29 @@ export default function BlogPage() {
                     onChange={handleSearchBarChange} 
                     placeholder="Search through our posts..." 
                 />
-            </div>
-            {/* If after filtering logic the array has posts, render them in post cards*/
-                filteredPosts.length > 0 && 
+            </section>
+            <section className={classes.listOfPosts}>
+                {/* If after filtering logic the array has posts, render them in post cards*/
+                    filteredPosts.length > 0 && 
                     <ul className={classes.postsGrid}>
                         {filteredPosts.map(post => (
                             <PostCard post={post} key={post.slug} />
                         ))}
                     </ul>
-            }
-            {/* If after filtering logic the array has no posts, render fallback content*/
-                filteredPosts.length === 0 && 
-                    <div className={classes.NoPostsFound}>
-                        <Image 
-                            src={notFoundIcon}
-                            alt="Blog not found icon" 
-                            width={100} 
-                            height={100}
-                        />
-                        <p>No related posts were found...</p>
-                    </div>
-            }
+                }
+                {/* If after filtering logic the array has no posts, render fallback content*/
+                    filteredPosts.length === 0 && 
+                        <div className={classes.NoPostsFound}>
+                            <Image 
+                                src={notFoundIcon}
+                                alt="Blog not found icon" 
+                                width={100} 
+                                height={100}
+                            />
+                            <p>No related posts were found...</p>
+                        </div>
+                }
+            </section>
         </>
     );
 }

@@ -11,7 +11,6 @@ const permanentMarker = Permanent_Marker({
 
 export default function Footer() {
     return (
-        <section>
             <footer className={classes.footer}>
                 <p>A project created by 
                     <span className={`${permanentMarker.className} ${classes.creator}`}> ANUGO
@@ -28,6 +27,5 @@ export default function Footer() {
                     </Link>
                 </span>
             </footer>
-        </section>
     );
 }

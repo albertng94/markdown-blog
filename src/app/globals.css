@@ -17,11 +17,14 @@ body {
 }
 
 body {
+  min-height: 100vh;
   color: var(--foreground);
   background: var(--background);
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  grid-template-rows: min(120px, 15vh) 1fr min(60px, 10vh);
 }
 
 h1 {
@@ -56,9 +59,8 @@ a {
 }
 
 .pages-wrapper {
-  margin-top: 10vh;
-  outline: teal solid 4px;
-  min-height: 85vh;
+  grid-row: 2 / 3;
+  outline: yellow solid 4px;
   display: flex;
   flex-direction: column;
   align-items: space-around;
