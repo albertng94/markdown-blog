@@ -1,0 +1,43 @@
+.headerLink {
+    display: flex;
+    width: 10rem;
+    height: 65%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 50px 50px 0 0;
+}
+
+.headerLink li {
+    color: grey;
+}
+
+.active {
+    background-color: black;
+    border-radius: 50px 50px 0 0;
+}
+
+.active li {
+    color: white;
+}
+
+.headerLink:not(.active):hover li {
+    color: black;
+}
+
+@media (max-width: 500px) {
+    .headerLink {
+        height: 80%;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .headerLink li {
+        position: relative;
+        
+    }
+
+    .active {
+        border-radius: 0 0 50px 50px;
+    }
+}

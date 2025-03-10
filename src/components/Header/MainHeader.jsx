@@ -1,28 +1,24 @@
 import { RiMarkdownLine } from "react-icons/ri";
 import classes from "./MainHeader.module.css";
 import NavItem from "./NavItem";
-import Link from "next/link";
+import NavLink from "./HeaderLink";
 
 export default function MainHeader() {
     return (
         <header className={classes.header}>
                 <div className={classes.logoDiv}>
-                    <RiMarkdownLine fontSize={100} />
+                    <RiMarkdownLine className={classes.logo} />
                     <h1 className={classes.title}>Your<br/>Markdown<br/>Blog</h1>
                 </div>
                 
                 <nav className={classes.nav}>
                     <ul>
-                        <NavItem>
-                            <Link href="/">About the<br/>project</Link>
-                        </NavItem>
-                        <NavItem>
-                            <Link href="/blog">Blog<br/>Posts</Link>
-                        </NavItem>
-                        <NavItem>
-                            <Link href="/drafts">Your<br/>Drafts</Link>
-                        </NavItem>
-                        <NavItem>Dark<br/>Mode</NavItem>
+                        <NavLink href="/">
+                            <NavItem>About</NavItem>
+                        </NavLink>
+                        <NavLink href="/blog">
+                            <NavItem>Blog</NavItem>
+                        </NavLink>
                     </ul>
                 </nav>
                 
