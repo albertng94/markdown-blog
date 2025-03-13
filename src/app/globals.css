@@ -87,6 +87,7 @@ a {
 }
 
 .pages-wrapper {
+  width: 100vw;
   grid-row: 2 / 3;
   outline: yellow solid 4px;
   display: flex;

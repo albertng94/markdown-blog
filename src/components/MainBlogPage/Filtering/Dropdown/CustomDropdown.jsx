@@ -7,16 +7,14 @@ export default function CustomDropdown({ options, defaultOption, handleClick, is
     const [selectedOption, setSelectedOption] = useState(defaultOption);
 
     return (
-        <div className={classes.dropdown} onClick={handleClick}>
+        <div className={isOpen ? `${classes.selectedOption} ${classes.focusedSelectedOption}` : classes.selectedOption} onClick={handleClick}>
             <span className={classes.dropdownIcon}><Image 
                 src={dropdownBlackIcon}
                 alt="Dropdown icon" 
                 width={30} 
                 height={30} 
             /></span>
-            <div
-                className={isOpen ? `${classes.selectedOption} ${classes.focusedSelectedOption}` : classes.selectedOption}
-            >
+            <div>
                 {selectedOption}
             </div>
             {isOpen && (

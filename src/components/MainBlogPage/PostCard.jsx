@@ -16,7 +16,7 @@ export default function PostCard({ post }) {
                 />
                 <div className={classes.descriptionDiv}>
                     <p className={classes.postDescription}>
-                        {post.description} <span><button className={classes.readMore}>Read more...</button></span>
+                        {post.description} <span className={classes.readMore}>{`Read more ➛`}</span>
                     </p>
                 </div>
                 <div className={classes.authorDateDiv}>

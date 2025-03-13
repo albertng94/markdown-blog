@@ -8,7 +8,7 @@ export default function MainHeader() {
         <header className={classes.header}>
                 <div className={classes.logoDiv}>
                     <RiMarkdownLine className={classes.logo} />
-                    <h1 className={classes.title}>Your<br/>Markdown<br/>Blog</h1>
+                    <h1 className={classes.title}>A Simple<br/>Markdown<br/>Blog</h1>
                 </div>
                 
                 <nav className={classes.nav}>

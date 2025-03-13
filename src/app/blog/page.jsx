@@ -115,40 +115,42 @@ export default function BlogPage() {
 
     return (
         <>
-            <section className={classes.filters}>
-                <CustomDropdown
-                    options={dateFilter.options}
-                    defaultOption={dateFilter.defaultOption} 
-                    handleClick={() => handleDropdownClick(1)}
-                    isOpen={openDropdown === 1}
-                    handleFiltering={handleDateFiltering}
-                />
-                <CustomDropdown
-                    options={authorFilter.options}
-                    defaultOption={authorFilter.defaultOption}
-                    handleClick={() => handleDropdownClick(2)} 
-                    isOpen={openDropdown === 2}
-                    handleFiltering={handleAuthorFiltering}
-                />
-                <CustomDropdown
-                    options={categoryFilter.options}
-                    defaultOption={categoryFilter.defaultOption} 
-                    handleClick={() => handleDropdownClick(3)}
-                    isOpen={openDropdown === 3}
-                    handleFiltering={handleCategoryFiltering}
-                />
+            <section className={classes.filtersSection}>
+                <div className={classes.dropdownDiv}>
+                    <CustomDropdown
+                        options={dateFilter.options}
+                        defaultOption={dateFilter.defaultOption} 
+                        handleClick={() => handleDropdownClick(1)}
+                        isOpen={openDropdown === 1}
+                        handleFiltering={handleDateFiltering}
+                    />
+                    <CustomDropdown
+                        options={authorFilter.options}
+                        defaultOption={authorFilter.defaultOption}
+                        handleClick={() => handleDropdownClick(2)} 
+                        isOpen={openDropdown === 2}
+                        handleFiltering={handleAuthorFiltering}
+                    />
+                    <CustomDropdown
+                        options={categoryFilter.options}
+                        defaultOption={categoryFilter.defaultOption} 
+                        handleClick={() => handleDropdownClick(3)}
+                        isOpen={openDropdown === 3}
+                        handleFiltering={handleCategoryFiltering}
+                    />
+                </div>
                 <input 
                     className={classes.searchBar} 
                     type="search" 
                     onChange={handleSearchBarChange} 
-                    placeholder="Search through our posts..." 
+                    placeholder="Search our posts..." 
                 />
             </section>
             <section className={classes.listOfPosts}>
                 {/* If after filtering logic the array has posts, render them in post cards*/
                     filteredPosts.length > 0 && 
                     <ul className={classes.postsGrid}>
-                        {filteredPosts.map(post => (
+                        {filteredPosts.map((post) => (
                             <PostCard post={post} key={post.slug} />
                         ))}
                     </ul>

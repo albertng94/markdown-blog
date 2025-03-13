@@ -1,5 +1,4 @@
 .footer {
-    outline: solid blue 2px;
     grid-row: 3 / 4;
     position: relative;
     background-color: rgb(39, 36, 36);

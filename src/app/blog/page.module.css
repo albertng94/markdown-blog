@@ -1,33 +1,37 @@
-.filters {
-    outline: orchid solid 2px;
+.filtersSection {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1rem;
     padding-top: 6vh;
     padding-bottom: 6vh;
-    padding-right: clamp(50px, 10vw, 600px);
-    padding-left: clamp(50px, 10vw, 600px);
+    margin-right: clamp(25px, 10vw, 600px);
+    margin-left: clamp(25px, 10vw, 600px);
+}
+
+.dropdownDiv {
+    display: flex;
+    gap: 1rem;
 }
 
 .searchBar {
     all: unset;
-    font-size: 14px;
-    border: 1px solid;
+    width: 15rem;
+    height: 23px;
+    font-size: 1rem;
+    border: 1px solid rgb(208, 207, 207);
     background-color: white;
-    border-color: rgb(208, 207, 207);
     border-radius: 7px;
-    padding: 5px;
-    height: 35px;
+    padding: 5px 10px;
 }
 
 .listOfPosts {
-    outline: solid green 2px;
+    width: 100vw;
 }
 
 .postsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-columns: repeat(auto-fill, min(350px, 25rem));
     grid-template-rows: repeat(auto-fill, 350px);
     list-style: none;
     margin-top: 0;
@@ -45,4 +49,21 @@
     align-items: center;
     gap: 25px;
     font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .filtersSection {
+        flex-direction: column;
+    }
+
+    .searchBar {
+        height: 15px;
+        width: 398px;
+    }
+}
+
+@media (max-width: 500px) {
+    .searchBar {
+        width: calc(100% - 14px);
+    }
 }
