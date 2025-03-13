@@ -11,16 +11,16 @@
 }
 
 .creator {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .secondary {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     font-family: sans-serif;
 }
 
 .githubIcon {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
 }
