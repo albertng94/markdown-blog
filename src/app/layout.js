@@ -12,10 +12,6 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
-// const permanentMarker = Permanent_Marker({
-//   subsets: ["latin"],
-//   weight: ["400"]
-// });
 
 export const metadata = {
   title: "Your Markdown Blog",

@@ -1,13 +1,18 @@
 import classes from "./page.module.css";
 import { getPostBySlug } from "@/lib/posts";
+import Image from "next/image";
+import backIcon from "../../../../public/icons/backIcon.svg"
+import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default async function Post({ params }) {
     
     const {slug, contentHtml, ...metadata} = await getPostBySlug(params.slug);
 
+
     return (
-        <section className={classes.blogContainer}>
-            <article>
+        <section>
+            <article className={classes.blogContainer}>
                 <div 
                     className={classes.postContent} 
                     dangerouslySetInnerHTML={{__html: contentHtml}}>
@@ -17,6 +22,15 @@ export default async function Post({ params }) {
                     <h5>{metadata.date}</h5>
                 </div>
             </article>
+            <Link href="/blog" className={classes.backTo}>
+                <div className={classes.backIcon}>
+                    <Image 
+                        alt="A button representing an arrow to the left." 
+                        src={backIcon}
+                    />
+                </div>
+                <p>Back to all posts.</p>
+            </Link>
         </section>
     );
 }

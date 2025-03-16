@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import notFoundIcon from "../../../public/icons/notFound.svg";
 
+
 // // Define filter options based on date
 const dateFilter = {
     options: ["All posts", "Last 30 days", "Last 90 days", "Last year"],
@@ -61,6 +62,23 @@ export default function BlogPage() {
     function handleDropdownClick(dropdownIndex) {
         setOpenDropdown(openDropdown === dropdownIndex ? false : dropdownIndex);
     }
+
+    // Close opened dropdowns with ESC key
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === 'Escape') {
+              setOpenDropdown(false); // Close dropdown when Escape is pressed
+            }
+          };
+      
+          // Add event listener
+          document.addEventListener('keydown', handleKeyDown);
+      
+          // Cleanup the event listener on component unmount
+          return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+          };
+    }, []);
 
     // Handle search bar value changes and update the "searchTerm" state value
     function handleSearchBarChange(event) {
@@ -127,14 +145,14 @@ export default function BlogPage() {
                     <CustomDropdown
                         options={authorFilter.options}
                         defaultOption={authorFilter.defaultOption}
-                        handleClick={() => handleDropdownClick(2)} 
+                        handleClick={() => handleDropdownClick(2)}
                         isOpen={openDropdown === 2}
                         handleFiltering={handleAuthorFiltering}
                     />
                     <CustomDropdown
                         options={categoryFilter.options}
                         defaultOption={categoryFilter.defaultOption} 
-                        handleClick={() => handleDropdownClick(3)}
+                        handleClick={() => handleDropdownClick(3)}                      
                         isOpen={openDropdown === 3}
                         handleFiltering={handleCategoryFiltering}
                     />
@@ -144,6 +162,10 @@ export default function BlogPage() {
                     type="search" 
                     onChange={handleSearchBarChange} 
                     placeholder="Search our posts..." 
+                    onSelect={() => {
+                        // Close opened dropdowns if searach bar is selected
+                        setOpenDropdown(false);
+                    }}
                 />
             </section>
             <section className={classes.listOfPosts}>
@@ -154,9 +176,12 @@ export default function BlogPage() {
                             <PostCard post={post} key={post.slug} />
                         ))}
                     </ul>
+                   
                 }
                 {/* If after filtering logic the array has no posts, render fallback content*/
-                    filteredPosts.length === 0 && 
+                    (filteredPosts.length === 0 && posts.filteredByDate.length > 0 || 
+                        filteredPosts.length === 0 && posts.filteredByAuthor.length > 0 || 
+                        filteredPosts.length === 0 && posts.filteredByCategory.length > 0) &&
                         <div className={classes.NoPostsFound}>
                             <Image 
                                 src={notFoundIcon}
