@@ -24,7 +24,7 @@ export default async function Post({ params }) {
             <Link href="/blog" className={classes.backTo}>
                 <div className={classes.backIcon}>
                     <Image 
-                        alt="A button representing an arrow to the left." 
+                        alt="An icon representing an arrow to the left." 
                         src={backIcon}
                     />
                 </div>
