@@ -3,7 +3,6 @@ import { getPostBySlug } from "@/lib/posts";
 import Image from "next/image";
 import backIcon from "../../../../public/icons/backIcon.svg"
 import Link from "next/link";
-import { notFound } from "next/navigation";
 
 export default async function Post({ params }) {
     
@@ -11,7 +10,7 @@ export default async function Post({ params }) {
 
 
     return (
-        <section>
+        <section className={classes.section}>
             <article className={classes.blogContainer}>
                 <div 
                     className={classes.postContent} 

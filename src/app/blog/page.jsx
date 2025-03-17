@@ -12,6 +12,7 @@ import {
 } from "@/lib/filterPosts";
 import Image from "next/image";
 import notFoundIcon from "../../../public/icons/notFound.svg";
+import { motion } from "framer-motion";
 
 
 // // Define filter options based on date
@@ -173,7 +174,16 @@ export default function BlogPage() {
                     filteredPosts.length > 0 && 
                     <ul className={classes.postsGrid}>
                         {filteredPosts.map((post) => (
-                            <PostCard post={post} key={post.slug} />
+                            <motion.div
+                                variants={{
+                                    hidden: { opacity: 0, x: -50 },
+                                    visible: { opacity: 1, x: 0 }
+                                }}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <PostCard post={post} key={post.slug} />
+                            </motion.div>
                         ))}
                     </ul>
                    

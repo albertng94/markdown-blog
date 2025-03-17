@@ -13,7 +13,9 @@ export default function Footer() {
     return (
             <footer className={classes.footer}>
                 <p>A project created by 
-                    <span className={`${permanentMarker.className} ${classes.creator}`}> ANUGO
+                    <span 
+                        className={`${permanentMarker.className} ${classes.creator}`}
+                    > ANUGO
                         <span className={classes.secondary}>.dev</span>
                     </span>
                 </p>

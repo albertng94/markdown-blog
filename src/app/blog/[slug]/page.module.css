@@ -1,3 +1,9 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .blogContainer {
     padding-top: 7vh;
     padding-bottom: 7vh;
@@ -56,16 +62,20 @@
 }
 
 .backTo {
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    transition: transform 0.5s;
 }
 
 .backIcon {
-    outline: red solid 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*width: 32px;*/
+}
+
+.backTo:hover {
+    transform: scale(1.3);
 }
