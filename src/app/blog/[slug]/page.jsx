@@ -1,13 +1,10 @@
 import classes from "./page.module.css";
 import { getPostBySlug } from "@/lib/posts";
-import Image from "next/image";
-import backIcon from "../../../../public/icons/backIcon.svg"
 import Link from "next/link";
 
 export default async function Post({ params }) {
     
     const {slug, contentHtml, ...metadata} = await getPostBySlug(params.slug);
-
 
     return (
         <section className={classes.section}>
@@ -23,10 +20,7 @@ export default async function Post({ params }) {
             </article>
             <Link href="/blog" className={classes.backTo}>
                 <div className={classes.backIcon}>
-                    <Image 
-                        alt="An icon representing an arrow to the left." 
-                        src={backIcon}
-                    />
+                    <span class="material-icons">keyboard_return</span>
                 </div>
                 <p>Back to all posts.</p>
             </Link>

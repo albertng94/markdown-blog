@@ -8,7 +8,7 @@
 }
 
 .postItem:hover {
-    background-color: rgb(246, 246, 246);
+    background-color: var(--postItem-hover);
     animation: bounce 0.3s;
 }
 
@@ -30,7 +30,7 @@
 
 .postDescription {
     font-size: 15px;
-    color: rgb(42, 41, 41);
+    color: var(--postItem-description);
     margin-top: 5px;
 }
 
@@ -38,8 +38,8 @@
     position: absolute;
     bottom: -30px;
     left: 0;
-    color: black;
     font-weight: 600;
+    color: var(--foreground);
 }
 
 .authorDateDiv {
@@ -57,7 +57,7 @@
 
 .postDate {
     font-size: 12px;
-    color: rgb(61, 60, 60);
+    color: var(--postItem-date);
 }
 
 @keyframes bounce {

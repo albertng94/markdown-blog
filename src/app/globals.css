@@ -1,13 +1,21 @@
 :root {
+  --simple-text: black;
+  --simple-text-reversed: whitesmoke;
   --background: #ffffff;
   --foreground: #171717;
+  --postItem-hover: rgb(246, 246, 246);
+  --postItem-description: rgb(42, 41, 41);
+  --postItem-date: rgb(61, 60, 60);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="dark"] {
+  --simple-text: whitesmoke;
+  --simple-text-reversed: black;
+  --background: rgb(90, 87, 87);
+  --foreground: #ededed;
+  --postItem-hover: rgb(111, 108, 108);
+  --postItem-description:  #dcd9d9;
+  --postItem-date: #c5c1c1;
 }
 
 html {
@@ -80,16 +88,9 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 .pages-wrapper {
   width: 100vw;
   grid-row: 2 / 3;
-  outline: yellow solid 4px;
   display: flex;
   flex-direction: column;
   align-items: space-around;

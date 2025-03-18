@@ -8,7 +8,8 @@
     border-radius: 7px;
     padding: 5px;
     height: 35px;
-    width: 130px
+    width: 130px;
+    color: black;
 }
 
 .selectedOption:hover {

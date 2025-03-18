@@ -3,13 +3,15 @@
     grid-row: 1 / 2;
     position: relative;
     display: flex;
-    border-bottom: 0.5rem solid black;
-    background-color: whitesmoke;
+    border-bottom: 0.5rem solid rgb(40, 39, 39);
+    /*background-color: whitesmoke;*/
+    background: linear-gradient(32deg, rgba(248,249,249,1) 0%, rgba(204,204,212,1) 55%, rgba(100,99,102,1) 89%);
     height: 100%;
     width: 100vw;
 }
 
 .logoDiv {
+    color: rgb(40, 39, 39);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -42,8 +42,8 @@
     gap: 10px;
     padding: 5px;
     width: 300px;
-    border-top: black solid 1px;
-    border-bottom: black solid 1px;
+    border-top: var(--foreground) solid 1px;
+    border-bottom: var(--foreground) solid 1px;
     padding: 10px;
 }
 
@@ -74,6 +74,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.material-icons {
+    color: var(--foreground);
 }
 
 .backTo:hover {
