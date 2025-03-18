@@ -24,6 +24,7 @@
     border-radius: 7px;
     padding: 5px 10px;
     color: black;
+    box-shadow: var(--dropdown-box-shadow);
 }
 
 .searchBar:focus {

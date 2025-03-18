@@ -12,6 +12,7 @@
     border-radius: 15px;
     gap: 5px;
     padding: 3px;
+    box-shadow: var(--dropdown-box-shadow);
 }
 
 .modeToggle:hover {

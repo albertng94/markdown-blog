@@ -10,6 +10,7 @@
     height: 35px;
     width: 130px;
     color: black;
+    box-shadow: var(--dropdown-box-shadow);
 }
 
 .selectedOption:hover {
@@ -42,6 +43,7 @@
     border-radius: 7px;
     list-style: none;
     color: black;
+    box-shadow: var(--dropdown-box-shadow);
 }
 
 .fourOptionsDiv {
@@ -57,6 +59,7 @@
     border-radius: 7px;
     list-style: none;
     color: black;
+    box-shadow: var(--dropdown-box-shadow);
 }
 
 .option {

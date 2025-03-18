@@ -4,10 +4,10 @@
     position: relative;
     display: flex;
     border-bottom: 0.5rem solid rgb(40, 39, 39);
-    /*background-color: whitesmoke;*/
     background: linear-gradient(32deg, rgba(248,249,249,1) 0%, rgba(204,204,212,1) 55%, rgba(100,99,102,1) 89%);
     height: 100%;
     width: 100vw;
+    box-shadow: var(--header-box-shadow);
 }
 
 .logoDiv {
@@ -49,6 +49,7 @@
         align-items: center;
         gap: 0.5rem;
         border-bottom: none;
+        box-shadow: none;
     }
 
     .logoDiv {
@@ -65,8 +66,9 @@
 
     .nav {
         height: 40%;
-        border-top: 0.5rem solid black;
+        border-top: 0.5rem solid rgb(40, 39, 39);
         background-color: #ffffff;
+        
     }
 
     .nav ul {

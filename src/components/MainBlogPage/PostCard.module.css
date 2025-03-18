@@ -3,8 +3,9 @@
     flex-direction: column;
     height: 370px;
     padding: 1rem 3.3rem;
-    border-left: solid 1px rgb(222, 220, 220);
-    border-right: solid 1px rgb(222, 220, 220);
+    /*border-left: solid 1px rgb(222, 220, 220);
+    border-right: solid 1px rgb(222, 220, 220);*/
+    box-shadow: var(--postItem-box-shadow);
 }
 
 .postItem:hover {
