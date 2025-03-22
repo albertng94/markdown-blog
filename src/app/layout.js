@@ -1,8 +1,8 @@
 import { Lato, Montserrat } from "next/font/google";
 import "./globals.css";
-import MainHeader from "@/components/Header/MainHeader";
-import Footer from "@/components/Footer/Footer";
-import ModeToggle from "@/components/ModeToggle/ModeToggle";
+import MainHeader from "../components/Header/MainHeader";
+import Footer from "../components/Footer/Footer";
+import ModeToggle from "../components/ModeToggle/ModeToggle";
 
 
 const lato = Lato({

@@ -1,5 +1,5 @@
 import classes from "./page.module.css";
-import { getPostBySlug } from "@/lib/posts";
+import { getPostBySlug } from "../../../lib/posts";
 import Link from "next/link";
 
 export default async function Post({ params }) {
@@ -20,7 +20,7 @@ export default async function Post({ params }) {
             </article>
             <Link href="/blog" className={classes.backTo}>
                 <div className={classes.backIcon}>
-                    <span class="material-icons">keyboard_return</span>
+                    <span className="material-icons">keyboard_return</span>
                 </div>
                 <p>Back to all posts.</p>
             </Link>

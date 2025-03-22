@@ -1,36 +1,9 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a simple blog created using NextJS, ReactJS, JavaScript and CSS.
 
-## Getting Started
+It renders some posts stored not in a server but in the file system. It has the particularity that these posts are markdown (.md) files, and as such the project uses the "matter" package to access to the files data and "remark" to translate it into html renderable content. The posts content is accessed via an API route returning them as a reponse, which is afterwards fetched from the blog page, which renders them in the end.
 
-First, run the development server:
+The blog has a filtering functionality with some dropdowns that allow filtering the rendered posts by the metadata variables "author", "category", and "date", and also a search bar that allows filtering by any keyword included both in the metadata and the post content itself.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The blog is responsive for different desktop and mobile screen sizes. It uses a combination of global and modular CSS. It uses grid for the general and post items layouts, and a combination of CSS and Framer Motion for the animations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The blog also has a custom light-dark mode toggle functionality, allowing to switch the color theme at any time.

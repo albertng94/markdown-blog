@@ -1,15 +1,15 @@
 "use client";
 
-import PostCard from "@/components/MainBlogPage/PostCard";
+import PostCard from "../../components/MainBlogPage/PostCard";
 import classes from "./page.module.css";
 import { useEffect, useState } from "react";
-import CustomDropdown from "@/components/MainBlogPage/Filtering/Dropdown/CustomDropdown";
+import CustomDropdown from "../../components/MainBlogPage/Filtering/Dropdown/CustomDropdown";
 import { 
     filterPostsByDate, 
     filterPostsByAuthor, 
     filterPostsByCategory, 
     getCommonFilteredPosts 
-} from "@/lib/filterPosts";
+} from "../../lib/filterPosts";
 import { motion } from "framer-motion";
 
 
